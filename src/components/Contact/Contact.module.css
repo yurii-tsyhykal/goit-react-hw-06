@@ -1,0 +1,16 @@
+.userData {
+  display: inline-flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.deleteBtn {
+  margin-left: auto;
+  border: none;
+}
+
+.telIcon,
+.userIcon {
+  margin-right: 10px;
+}
