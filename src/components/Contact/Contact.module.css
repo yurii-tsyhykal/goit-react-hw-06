@@ -6,8 +6,8 @@
 }
 
 .deleteBtn {
-  margin-left: auto;
-  border: none;
+  line-height: 1.3;
+  cursor: pointer;
 }
 
 .telIcon,

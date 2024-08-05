@@ -9,5 +9,7 @@
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 25px;
   padding: 5px;
 }
