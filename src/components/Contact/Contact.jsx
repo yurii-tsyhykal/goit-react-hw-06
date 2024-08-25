@@ -1,7 +1,10 @@
 import css from './Contact.module.css';
 import { RiContactsFill } from 'react-icons/ri';
 import { IoCall } from 'react-icons/io5';
-const Contact = ({ id, name, number, deleteContact }) => {
+import { useDispatch } from 'react-redux';
+import { deleteContact } from '../../redux/contactsSlice/contactsSlice';
+const Contact = ({ id, name, number, }) => {
+  const dispatch = useDispatch();
   return (
     <>
       <div className={css.userData}>
@@ -17,7 +20,7 @@ const Contact = ({ id, name, number, deleteContact }) => {
       <button
         type="button"
         className={css.deleteBtn}
-        onClick={() => deleteContact(id)}
+        onClick={() => dispatch(deleteContact(id))}
       >
         Delete
       </button>
